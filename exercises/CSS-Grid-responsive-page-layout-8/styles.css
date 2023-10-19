@@ -1,0 +1,67 @@
+/* This file does not contain any grid-relevant code. */
+
+:root {
+  --light-grey: hsl(231, 16%, 92%);
+  --blue: hsl(229, 22%, 40%);
+  --yellow: hsl(55, 84%, 61%);
+}
+
+body {
+  margin: 2rem;
+  background-color: var(--light-grey);
+  color: var(--blue);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--yellow);
+  padding: 1em 0.5em;
+}
+
+nav a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main p a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+main p a:hover {
+  text-decoration: underline;
+}
+
+main, aside {
+  font-size: clamp(0.75rem, 4vw, 1.5rem);  
+}
+
+aside * {
+  font-size: 0.8em;
+}
+
+main > p {
+  margin-bottom: 1em;
+}
+
+main > p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  border-top: dashed 3px var(--yellow);
+  padding-top: 0.75rem;
+  font-size: 0.75rem;
+}

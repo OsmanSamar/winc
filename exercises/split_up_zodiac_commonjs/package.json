@@ -1,0 +1,12 @@
+{
+  "name": "split_up_zodiac_commonjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --quiet"
+  },
+  "type": "commonjs",
+  "author": "samar",
+  "license": "ISC"
+}

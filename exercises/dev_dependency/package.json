@@ -1,0 +1,19 @@
+{
+  "name": "practice_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "optional": "^0.1.4"
+  },
+  "scripts": {
+    "start": "nodemon --quiet",
+    "format": "npx prettier --write index.js"
+  },
+  "author": "Samar",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.0.2"
+  }
+}

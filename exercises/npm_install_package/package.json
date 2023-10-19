@@ -1,0 +1,17 @@
+{
+  "name": "practice_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --quiet"
+  },
+  "keywords": [],
+  "author": "Samar",
+  "license": "ISC",
+  "dependencies": {
+    "camelcase": "^8.0.0",
+    "camelcase-keys": "^9.0.0"
+  }
+}

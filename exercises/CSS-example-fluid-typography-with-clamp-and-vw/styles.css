@@ -1,0 +1,36 @@
+/* Horizontally center. */
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 66ch;
+  margin: 0 1em
+}
+
+h1, h2, h3 {
+  display:flex;
+  justify-content: center;
+  line-height: 1;
+}
+
+h1 {
+  margin: 0.5em 0;
+  font-size: clamp(2rem, 12vw, 5rem);
+}
+
+h2 {
+  margin: 0.25em 0;
+  font-size: clamp(1.5rem, 10vw, 3.5rem);
+}
+
+h3 {
+  margin: 0.25em 0;
+  font-size: clamp(1.25rem, 8vw, 2.5rem);
+}
+
+p {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  line-height: 1.5;
+}
