@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(231, 190, 128);
+  color: rgb(103, 70, 20);
+  text-align: center;
+  padding: 2em;
+}
+
+.card-img {
+  width: 20vw;
+  border-radius: 50%;
+  border: 3px solid rgb(103, 70, 20);
+}
+.card-name {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.card-name::after {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 2em;
+  background-color: rgb(103, 70, 20);
+  margin: 0.65em auto 0.5em; /* to be in the middle*/
+  opacity: 0.35;
+}
+
+.card-position {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  color: rgb(103, 70, 20);
+  margin-bottom: 2em;
+}
+
+card-body {
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+
+  margin: 0 auto; /*to center */
+}
+
+.social-link {
+  color: chocolate;
+  opacity: 0.5;
+  font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  opacity: 1;
+}
+
+@media (min-width: 700px) {
+  .card {
+    flex-direction: row;
+  }
+  .card-main {
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  .card-name::after {
+    margin-left: 0;
+  }
+
+  .card-img {
+    width: 10vw;
+  }
+}
